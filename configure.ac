@@ -46,9 +46,9 @@ LTLDFLAGS="${LTLDFLAGS} -no-undefined"
 
 AC_MSG_CHECKING([operating system])
 
-dnl on *-linux-android platform, some functions are in different places
+dnl on linux-android platform, some functions are in different places
 case $host in
-*-linux-android)
+*-linux-android*)
 	AC_MSG_RESULT([This is a Linux-Android system])
 	is_backend_android="yes"
 	;;
